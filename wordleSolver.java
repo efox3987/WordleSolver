@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class wordleSolver {
+public class WordleSolver {
     private static ArrayList<String> wordList;
     private static Scanner keyboard;
 

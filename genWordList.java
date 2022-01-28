@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class genWordList {
+public class GenWordList {
     public static void main(String[] args) throws Exception {
         /**
          * Creating the word list from 'words' unix file
