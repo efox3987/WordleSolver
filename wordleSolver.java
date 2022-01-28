@@ -9,9 +9,11 @@ public class WordleSolver {
     private static Scanner keyboard;
 
     private static void removeUnusableWords() {
-        System.out.println("Enter all letters that are unusable.");
+        System.out.println("Enter all gray letters.");
         System.out.print(">");
         String letters = keyboard.nextLine();
+        letters.replace(" ", "");
+        letters.replace(",", "");
         char[] letterArr = letters.toCharArray();
 
         for(int i = 0; i < letterArr.length; i++) {
@@ -22,13 +24,14 @@ public class WordleSolver {
                 }
             }
         }
-
     }
 
     private static void removeWordsWithout() {
         System.out.println("Enter all the yellow characters.");
         System.out.print(">");
         String letters = keyboard.nextLine();
+        letters.replace(" ", "");
+        letters.replace(",", "");
         char[] letterArr = letters.toCharArray();
 
         for(int i = 0; i < letterArr.length; i++) {
@@ -65,8 +68,8 @@ public class WordleSolver {
                 }
             }
         }
-        keyboard.close();
     }
+
     public static void main(String[] args) throws Exception {
         wordList = new ArrayList<String>();
         keyboard = new Scanner(System.in);
